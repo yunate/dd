@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="control\ddtrue_window.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="control\ddwindow.cpp">
+      <Filter>control</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d2d\ddd2d_factory_impl.cpp">
+      <Filter>graphics\d2d</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d2d\ddd2d_factory_impl_bitmap.cpp">
+      <Filter>graphics\d2d</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d2d\ddd2d_factory_impl_dwrite.cpp">
+      <Filter>graphics\d2d</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d2d\ddd2d_item_coord_system.cpp">
+      <Filter>graphics\d2d</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d2d\ddd2d_item_fx.cpp">
+      <Filter>graphics\d2d</Filter>
+    </ClCompile>
+    <ClCompile Include="graphics\d2d\ddd2d_render_target.cpp">
+      <Filter>graphics\d2d</Filter>
+    </ClCompile>
+    <ClCompile Include="style\ddlayout.cpp">
+      <Filter>style</Filter>
+    </ClCompile>
+    <ClCompile Include="style\ddstyle.cpp">
+      <Filter>style</Filter>
+    </ClCompile>
+    <ClCompile Include="ddkeyboard.cpp" />
+    <ClCompile Include="ddmouse.cpp" />
+    <ClCompile Include="ddnative_window.cpp" />
+    <ClCompile Include="ddmsg_loop.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="control\ddtrue_window.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="control\ddwindow.h">
+      <Filter>control</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d2d\ddd2d.h">
+      <Filter>graphics\d2d</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d2d\ddd2d_coordinate_system_context.hpp">
+      <Filter>graphics\d2d</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d2d\ddd2d_factory.h">
+      <Filter>graphics\d2d</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d2d\ddd2d_item_coord_system.h">
+      <Filter>graphics\d2d</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d2d\ddd2d_item_fx.h">
+      <Filter>graphics\d2d</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d2d\ddd2d_item_general.hpp">
+      <Filter>graphics\d2d</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d2d\ddd2d_item_idrawable.hpp">
+      <Filter>graphics\d2d</Filter>
+    </ClInclude>
+    <ClInclude Include="graphics\d2d\ddd2d_render_target.h">
+      <Filter>graphics\d2d</Filter>
+    </ClInclude>
+    <ClInclude Include="style\ddlayout.h">
+      <Filter>style</Filter>
+    </ClInclude>
+    <ClInclude Include="style\ddstyle.h">
+      <Filter>style</Filter>
+    </ClInclude>
+    <ClInclude Include="ddkeyboard.h" />
+    <ClInclude Include="ddmouse.h" />
+    <ClInclude Include="ddnative_window.h" />
+    <ClInclude Include="ddmini_include.h" />
+    <ClInclude Include="ddwindow_utils.hpp" />
+    <ClInclude Include="ddmsg_loop.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="control">
+      <UniqueIdentifier>{d89d2823-7f48-4d3d-8d79-63dd289d0b35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics">
+      <UniqueIdentifier>{98ff2638-a4e9-493a-99ad-5ef3e76519f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="style">
+      <UniqueIdentifier>{472232c5-baf4-4110-a717-6570d289e09b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="graphics\d2d">
+      <UniqueIdentifier>{5e42e54e-14c1-47b5-908b-16ec22fd2391}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
