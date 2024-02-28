@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="ddmouse_simulater.cpp" />
+    <ClCompile Include="ddglobal_info.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="ddmouse_simulater.h" />
+    <ClInclude Include="ddglobal_info.h" />
+  </ItemGroup>
+</Project>
