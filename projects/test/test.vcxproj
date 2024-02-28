@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Mdd|Win32">
+      <Configuration>Debug_Mdd</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Md|Win32">
+      <Configuration>Release_Md</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Mdd|x64">
+      <Configuration>Debug_Mdd</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Md|x64">
+      <Configuration>Release_Md</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <!-- 源码文件 -->
+  <ItemGroup>
+    <ClCompile Include="ddbase\coroutine\test_case_coroutine.cpp" />
+    <ClCompile Include="ddbase\coroutine\test_case_coroutine1.cpp" />
+    <ClCompile Include="ddbase\file\test_case_dddir_spyer.cpp" />
+    <ClCompile Include="ddbase\iocp\test_case_iocp_with_dispatcher.cpp" />
+    <ClCompile Include="ddbase\macro\test_case_ddmacro.cpp" />
+    <ClCompile Include="ddbase\network\test_case_http_client.cpp" />
+    <ClCompile Include="ddbase\network\test_case_http_requester.cpp" />
+    <ClCompile Include="ddbase\network\test_case_http_server.cpp" />
+    <ClCompile Include="ddbase\network\test_case_tcp.cpp" />
+    <ClCompile Include="ddbase\network\test_case_udp.cpp" />
+    <ClCompile Include="ddbase\stream\test_case_stream_view.cpp" />
+    <ClCompile Include="ddbase\stream\test_stream.cpp" />
+    <ClCompile Include="ddbase\str\test_ddjson.cpp" />
+    <ClCompile Include="ddbase\str\test_ddsjson.cpp" />
+    <ClCompile Include="ddbase\str\test_ddstr.cpp" />
+    <ClCompile Include="ddbase\test_case_ddbitmap.cpp" />
+    <ClCompile Include="ddbase\test_case_ddcolor.cpp" />
+    <ClCompile Include="ddbase\test_case_ddenvironment.cpp" />
+    <ClCompile Include="ddbase\thread\test_case_ddevent.cpp" />
+    <ClCompile Include="ddhook\test_case_classic_syringe.cpp" />
+    <ClCompile Include="ddbase\file\test_ddfile.cpp" />
+    <ClCompile Include="ddbase\file\test_ddpath.cpp" />
+    <ClCompile Include="ddbase\file\test_dir_utils.cpp" />
+    <ClCompile Include="ddbase\file\test_file_utils.cpp" />
+    <ClCompile Include="ddbase\iocp\test_case_iocp.cpp" />
+    <ClCompile Include="ddbase\ipc\test_shared_memory_ipc.cpp" />
+    <ClCompile Include="ddbase\pickle\test_pickle.cpp" />
+    <ClCompile Include="ddbase\test_case_cmd_line_util.cpp" />
+    <ClCompile Include="ddbase\test_case_ddexec_cmd.cpp" />
+    <ClCompile Include="ddbase\test_case_ddfast_str.cpp" />
+    <ClCompile Include="ddbase\test_case_ddfilter.cpp" />
+    <ClCompile Include="ddbase\test_case_ddlog.cpp" />
+    <ClCompile Include="ddbase\test_case_ddtimer.cpp" />
+    <ClCompile Include="ddbase\test_case_lazy_instance.cpp" />
+    <ClCompile Include="ddbase\test_case_member_count.cpp" />
+    <ClCompile Include="ddbase\test_case_version.cpp" />
+    <ClCompile Include="ddbase\test_exec_guard.cpp" />
+    <ClCompile Include="ddbase\test_random.cpp" />
+    <ClCompile Include="ddbase\test_shared_memory.cpp" />
+    <ClCompile Include="ddbase\test_single_limted.cpp" />
+    <ClCompile Include="ddbase\thread\test_thread.cpp" />
+    <ClCompile Include="ddbase\windows\testcase_dddll_param.cpp" />
+    <ClCompile Include="ddbase\windows\test_case_ddperfermence.cpp" />
+    <ClCompile Include="ddbase\windows\test_case_ddprocess.cpp" />
+    <ClCompile Include="ddbase\windows\test_case_ddwin_utils.cpp" />
+    <ClCompile Include="ddbase\windows\test_moudle_utils.cpp" />
+    <ClCompile Include="ddbase\windows\test_postmessage_to_window.cpp" />
+    <ClCompile Include="ddpra\test_case_mouse_simulater.cpp" />
+    <ClCompile Include="ddwin\test_case_send_mouse_message_to_window.cpp" />
+    <ClCompile Include="ddwin\test_ddwin.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="testcase_ddlocal.cpp" />
+    <ClCompile Include="test_case_ddstatic_initer.cpp" />
+    <ClCompile Include="test_ddtraits.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="res\resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\main.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\test.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cret\ddbase.pfx" />
+  </ItemGroup>
+  <!-- 项目定义 -->
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{63F4BB81-B9BB-441C-9C28-A5705EE69B3E}</ProjectGuid>
+    <RootNamespace>test</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseDebugLibraries Condition="'$(Configuration)'=='Debug' Or '$(Configuration)'=='Debug_Mdd'">true</UseDebugLibraries>
+    <UseDebugLibraries Condition="'$(Configuration)'=='Release' Or '$(Configuration)'=='Release_Md'">false</UseDebugLibraries>
+    <WholeProgramOptimization Condition="'$(Configuration)'=='Release' Or '$(Configuration)'=='Release_Md'">true</WholeProgramOptimization>
+  </PropertyGroup>
+  <!-- C++ 目录 -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(SolutionDir)user.props" />
+  <PropertyGroup>
+    <OutDir>$(USER_BuildOutDir)</OutDir>
+    <IntDir>$(USER_BuildTmpDir)$(ProjectName)\</IntDir>
+    <IncludePath>$(USER_IncludePath);$(IncludePath)</IncludePath>
+    <LibraryPath>$(USER_LibraryPath);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <!-- 编译 -->
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)ddbase\src\;$(SolutionDir)3rd\IPC\src\;$(SolutionDir)ddwin\src\;$(SolutionDir)ddhook\src\;$(USER_AdditionalIncludePath)</AdditionalIncludeDirectories>
+      <!-- stdafx -->
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(USER_BuildTmpDir)$(ProjectName)\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile>test/stdafx.h</PrecompiledHeaderFile>
+      <!-- MT/MD  -->
+      <RuntimeLibrary Condition="'$(Configuration)'=='Debug'">MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary Condition="'$(Configuration)'=='Debug_Mdd'">MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary Condition="'$(Configuration)'=='Release'">MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary Condition="'$(Configuration)'=='Release_Md'">MultiThreadedDLL</RuntimeLibrary>
+      <!-- 代码优化 -->
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+      <Optimization Condition="'$(Configuration)'=='Debug' Or '$(Configuration)'=='Debug_Mdd'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)'=='Release' Or '$(Configuration)'=='Release_Md'">MaxSpeed</Optimization>
+      <FunctionLevelLinking Condition="'$(Configuration)'=='Release' Or '$(Configuration)'=='Release_Md'">true</FunctionLevelLinking>
+      <IntrinsicFunctions Condition="'$(Configuration)'=='Release' Or '$(Configuration)'=='Release_Md'">true</IntrinsicFunctions>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings Condition="'$(Configuration)'=='Release' Or '$(Configuration)'=='Release_Md'">4189</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <!-- 代码优化 -->
+      <EnableCOMDATFolding Condition="'$(Configuration)'=='Release' Or '$(Configuration)'=='Release_Md'">true</EnableCOMDATFolding>
+      <OptimizeReferences Condition="'$(Configuration)'=='Release' Or '$(Configuration)'=='Release_Md'">true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

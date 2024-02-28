@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="code_format\code_format_main.cpp">
+      <Filter>code_format</Filter>
+    </ClCompile>
+    <ClCompile Include="code_format\ddcode_snapshot_cpp.cpp">
+      <Filter>code_format</Filter>
+    </ClCompile>
+    <ClCompile Include="sln_maker\sln_maker_main.cpp">
+      <Filter>sln_maker</Filter>
+    </ClCompile>
+    <ClCompile Include="sln_maker\sln_maker_helper.cpp">
+      <Filter>sln_maker</Filter>
+    </ClCompile>
+    <ClCompile Include="sln_maker\solusion_maker.cpp">
+      <Filter>sln_maker</Filter>
+    </ClCompile>
+    <ClCompile Include="project_file_adder\project_file_adder_main.cpp">
+      <Filter>project_file_adder</Filter>
+    </ClCompile>
+    <ClCompile Include="project_file_adder\project_file_adder.cpp">
+      <Filter>project_file_adder</Filter>
+    </ClCompile>
+    <ClCompile Include="project_packager\project_packager_main.cpp">
+      <Filter>project_packager</Filter>
+    </ClCompile>
+    <ClCompile Include="searcher\searcher_main.cpp">
+      <Filter>searcher</Filter>
+    </ClCompile>
+    <ClCompile Include="searcher\searcher.cpp">
+      <Filter>searcher</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="code_format\ddcode_snapshot_cpp.h">
+      <Filter>code_format</Filter>
+    </ClInclude>
+    <ClInclude Include="sln_maker\sln_maker_helper.h">
+      <Filter>sln_maker</Filter>
+    </ClInclude>
+    <ClInclude Include="sln_maker\solusion_maker.h">
+      <Filter>sln_maker</Filter>
+    </ClInclude>
+    <ClInclude Include="project_file_adder\project_file_adder.h">
+      <Filter>project_file_adder</Filter>
+    </ClInclude>
+    <ClInclude Include="searcher\searcher.h">
+      <Filter>searcher</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="code_format">
+      <UniqueIdentifier>{fd3b8ffb-ca81-42b7-b94a-a161d5ec4b35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sln_maker">
+      <UniqueIdentifier>{8b15c1d1-6a7e-4684-9790-f0e3888b67a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project_file_adder">
+      <UniqueIdentifier>{0f4dbcd7-8d31-42cd-9bdd-1ef38863a04a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project_packager">
+      <UniqueIdentifier>{408dacdd-55d5-4900-a8dd-edb74d6864ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="searcher">
+      <UniqueIdentifier>{a9aa6031-6de1-4f3c-8f14-c33d7eccb8ca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
