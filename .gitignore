@@ -1,0 +1,14 @@
+#dir
+.vs/
+/.git/
+bin/
+
+#file
+*.db
+*.opendb
+*.opensdf
+*.sdf
+*.suo
+*.tmp
+*.vcxproj.user
+*.aps
