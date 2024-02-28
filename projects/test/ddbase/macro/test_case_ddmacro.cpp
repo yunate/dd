@@ -1,0 +1,304 @@
+#include "test/stdafx.h"
+#include "ddbase/ddtest_case_factory.h"
+
+#include "ddbase/macro/ddsize.hpp"
+#include "ddbase/macro/ddfor.hpp"
+#include "ddbase/macro/ddeach.hpp"
+#include "ddbase/macro/dddec.hpp"
+
+namespace NSP_DD {
+
+#define A a
+#define B b
+
+#define NUM0 0
+#define NUM1 0
+
+DDTEST(test_case_ddmacro, DDCAT)
+{
+    std::string result = DDTOSTRING(DDCAT(A, B));
+    DDASSERT(result == "ab");
+}
+
+DDTEST(test_case_ddmacro, DDINC)
+{
+    DDASSERT(DDINC(0) == 1);
+    DDASSERT(DDINC(1) == 2);
+    DDASSERT(DDINC(2) == 3);
+    DDASSERT(DDINC(3) == 4);
+    DDASSERT(DDINC(4) == 5);
+    DDASSERT(DDINC(5) == 6);
+    DDASSERT(DDINC(6) == 7);
+    DDASSERT(DDINC(7) == 8);
+    DDASSERT(DDINC(8) == 9);
+    DDASSERT(DDINC(9) == 10);
+    DDASSERT(DDINC(10) == 11);
+    DDASSERT(DDINC(11) == 12);
+    DDASSERT(DDINC(12) == 13);
+    DDASSERT(DDINC(13) == 14);
+    DDASSERT(DDINC(14) == 15);
+    DDASSERT(DDINC(15) == 16);
+    DDASSERT(DDINC(16) == 17);
+    DDASSERT(DDINC(17) == 18);
+    DDASSERT(DDINC(18) == 19);
+    DDASSERT(DDINC(19) == 20);
+    DDASSERT(DDINC(20) == 21);
+    DDASSERT(DDINC(21) == 22);
+    DDASSERT(DDINC(22) == 23);
+    DDASSERT(DDINC(23) == 24);
+    DDASSERT(DDINC(24) == 25);
+    DDASSERT(DDINC(25) == 26);
+    DDASSERT(DDINC(26) == 27);
+    DDASSERT(DDINC(27) == 28);
+    DDASSERT(DDINC(28) == 29);
+    DDASSERT(DDINC(29) == 30);
+    DDASSERT(DDINC(30) == 31);
+    DDASSERT(DDINC(31) == 32);
+    DDASSERT(DDINC(32) == 33);
+    DDASSERT(DDINC(33) == 34);
+    DDASSERT(DDINC(34) == 35);
+    DDASSERT(DDINC(35) == 36);
+    DDASSERT(DDINC(36) == 37);
+    DDASSERT(DDINC(37) == 38);
+    DDASSERT(DDINC(38) == 39);
+    DDASSERT(DDINC(39) == 40);
+    DDASSERT(DDINC(40) == 41);
+    DDASSERT(DDINC(41) == 42);
+    DDASSERT(DDINC(42) == 43);
+    DDASSERT(DDINC(43) == 44);
+    DDASSERT(DDINC(44) == 45);
+    DDASSERT(DDINC(45) == 46);
+    DDASSERT(DDINC(46) == 47);
+    DDASSERT(DDINC(47) == 48);
+    DDASSERT(DDINC(48) == 49);
+    DDASSERT(DDINC(49) == 50);
+    DDASSERT(DDINC(50) == 51);
+    DDASSERT(DDINC(51) == 52);
+    DDASSERT(DDINC(52) == 53);
+    DDASSERT(DDINC(53) == 54);
+    DDASSERT(DDINC(54) == 55);
+    DDASSERT(DDINC(55) == 56);
+    DDASSERT(DDINC(56) == 57);
+    DDASSERT(DDINC(57) == 58);
+    DDASSERT(DDINC(58) == 59);
+    DDASSERT(DDINC(59) == 60);
+    DDASSERT(DDINC(60) == 61);
+    DDASSERT(DDINC(61) == 62);
+    DDASSERT(DDINC(62) == 63);
+    DDASSERT(DDINC(63) == 64);
+    DDASSERT(DDINC(64) == 65);
+    DDASSERT(DDINC(65) == 66);
+    DDASSERT(DDINC(66) == 67);
+    DDASSERT(DDINC(67) == 68);
+    DDASSERT(DDINC(68) == 69);
+    DDASSERT(DDINC(69) == 70);
+    DDASSERT(DDINC(70) == 71);
+    DDASSERT(DDINC(71) == 72);
+    DDASSERT(DDINC(72) == 73);
+    DDASSERT(DDINC(73) == 74);
+    DDASSERT(DDINC(74) == 75);
+    DDASSERT(DDINC(75) == 76);
+    DDASSERT(DDINC(76) == 77);
+    DDASSERT(DDINC(77) == 78);
+    DDASSERT(DDINC(78) == 79);
+    DDASSERT(DDINC(79) == 80);
+    DDASSERT(DDINC(80) == 81);
+    DDASSERT(DDINC(81) == 82);
+    DDASSERT(DDINC(82) == 83);
+    DDASSERT(DDINC(83) == 84);
+    DDASSERT(DDINC(84) == 85);
+    DDASSERT(DDINC(85) == 86);
+    DDASSERT(DDINC(86) == 87);
+    DDASSERT(DDINC(87) == 88);
+    DDASSERT(DDINC(88) == 89);
+    DDASSERT(DDINC(89) == 90);
+    DDASSERT(DDINC(90) == 91);
+    DDASSERT(DDINC(91) == 92);
+    DDASSERT(DDINC(92) == 93);
+    DDASSERT(DDINC(93) == 94);
+    DDASSERT(DDINC(94) == 95);
+    DDASSERT(DDINC(95) == 96);
+    DDASSERT(DDINC(96) == 97);
+    DDASSERT(DDINC(97) == 98);
+    DDASSERT(DDINC(98) == 99);
+    DDASSERT(DDINC(99) == 100);
+    DDASSERT(DDINC(100) == 0);
+}
+
+DDTEST(test_case_ddmacro, DDDEC)
+{
+    DDASSERT(DDDEC(0) == 100);
+    DDASSERT(DDDEC(1) == 0);
+    DDASSERT(DDDEC(2) == 1);
+    DDASSERT(DDDEC(3) == 2);
+    DDASSERT(DDDEC(4) == 3);
+    DDASSERT(DDDEC(5) == 4);
+    DDASSERT(DDDEC(6) == 5);
+    DDASSERT(DDDEC(7) == 6);
+    DDASSERT(DDDEC(8) == 7);
+    DDASSERT(DDDEC(9) == 8);
+    DDASSERT(DDDEC(10) == 9);
+    DDASSERT(DDDEC(11) == 10);
+    DDASSERT(DDDEC(12) == 11);
+    DDASSERT(DDDEC(13) == 12);
+    DDASSERT(DDDEC(14) == 13);
+    DDASSERT(DDDEC(15) == 14);
+    DDASSERT(DDDEC(16) == 15);
+    DDASSERT(DDDEC(17) == 16);
+    DDASSERT(DDDEC(18) == 17);
+    DDASSERT(DDDEC(19) == 18);
+    DDASSERT(DDDEC(20) == 19);
+    DDASSERT(DDDEC(21) == 20);
+    DDASSERT(DDDEC(22) == 21);
+    DDASSERT(DDDEC(23) == 22);
+    DDASSERT(DDDEC(24) == 23);
+    DDASSERT(DDDEC(25) == 24);
+    DDASSERT(DDDEC(26) == 25);
+    DDASSERT(DDDEC(27) == 26);
+    DDASSERT(DDDEC(28) == 27);
+    DDASSERT(DDDEC(29) == 28);
+    DDASSERT(DDDEC(30) == 29);
+    DDASSERT(DDDEC(31) == 30);
+    DDASSERT(DDDEC(32) == 31);
+    DDASSERT(DDDEC(33) == 32);
+    DDASSERT(DDDEC(34) == 33);
+    DDASSERT(DDDEC(35) == 34);
+    DDASSERT(DDDEC(36) == 35);
+    DDASSERT(DDDEC(37) == 36);
+    DDASSERT(DDDEC(38) == 37);
+    DDASSERT(DDDEC(39) == 38);
+    DDASSERT(DDDEC(40) == 39);
+    DDASSERT(DDDEC(41) == 40);
+    DDASSERT(DDDEC(42) == 41);
+    DDASSERT(DDDEC(43) == 42);
+    DDASSERT(DDDEC(44) == 43);
+    DDASSERT(DDDEC(45) == 44);
+    DDASSERT(DDDEC(46) == 45);
+    DDASSERT(DDDEC(47) == 46);
+    DDASSERT(DDDEC(48) == 47);
+    DDASSERT(DDDEC(49) == 48);
+    DDASSERT(DDDEC(50) == 49);
+    DDASSERT(DDDEC(51) == 50);
+    DDASSERT(DDDEC(52) == 51);
+    DDASSERT(DDDEC(53) == 52);
+    DDASSERT(DDDEC(54) == 53);
+    DDASSERT(DDDEC(55) == 54);
+    DDASSERT(DDDEC(56) == 55);
+    DDASSERT(DDDEC(57) == 56);
+    DDASSERT(DDDEC(58) == 57);
+    DDASSERT(DDDEC(59) == 58);
+    DDASSERT(DDDEC(60) == 59);
+    DDASSERT(DDDEC(61) == 60);
+    DDASSERT(DDDEC(62) == 61);
+    DDASSERT(DDDEC(63) == 62);
+    DDASSERT(DDDEC(64) == 63);
+    DDASSERT(DDDEC(65) == 64);
+    DDASSERT(DDDEC(66) == 65);
+    DDASSERT(DDDEC(67) == 66);
+    DDASSERT(DDDEC(68) == 67);
+    DDASSERT(DDDEC(69) == 68);
+    DDASSERT(DDDEC(70) == 69);
+    DDASSERT(DDDEC(71) == 70);
+    DDASSERT(DDDEC(72) == 71);
+    DDASSERT(DDDEC(73) == 72);
+    DDASSERT(DDDEC(74) == 73);
+    DDASSERT(DDDEC(75) == 74);
+    DDASSERT(DDDEC(76) == 75);
+    DDASSERT(DDDEC(77) == 76);
+    DDASSERT(DDDEC(78) == 77);
+    DDASSERT(DDDEC(79) == 78);
+    DDASSERT(DDDEC(80) == 79);
+    DDASSERT(DDDEC(81) == 80);
+    DDASSERT(DDDEC(82) == 81);
+    DDASSERT(DDDEC(83) == 82);
+    DDASSERT(DDDEC(84) == 83);
+    DDASSERT(DDDEC(85) == 84);
+    DDASSERT(DDDEC(86) == 85);
+    DDASSERT(DDDEC(87) == 86);
+    DDASSERT(DDDEC(88) == 87);
+    DDASSERT(DDDEC(89) == 88);
+    DDASSERT(DDDEC(90) == 89);
+    DDASSERT(DDDEC(91) == 90);
+    DDASSERT(DDDEC(92) == 91);
+    DDASSERT(DDDEC(93) == 92);
+    DDASSERT(DDDEC(94) == 93);
+    DDASSERT(DDDEC(95) == 94);
+    DDASSERT(DDDEC(96) == 95);
+    DDASSERT(DDDEC(97) == 96);
+    DDASSERT(DDDEC(98) == 97);
+    DDASSERT(DDDEC(99) == 98);
+    DDASSERT(DDDEC(100) == 99);
+}
+
+DDTEST(test_case_ddmacro, DDOR)
+{
+    DDASSERT(DDOR(DDTRUE, DDTRUE) == DDTRUE);
+    DDASSERT(DDOR(DDTRUE, DDFALSE) == DDTRUE);
+    DDASSERT(DDOR(DDFALSE, DDTRUE) == DDTRUE);
+    DDASSERT(DDOR(DDFALSE, DDFALSE) == DDFALSE);
+}
+
+DDTEST(test_case_ddmacro, DDAND)
+{
+    DDASSERT(DDAND(DDTRUE, DDTRUE) == DDTRUE);
+    DDASSERT(DDAND(DDTRUE, DDFALSE) == DDFALSE);
+    DDASSERT(DDAND(DDFALSE, DDTRUE) == DDFALSE);
+    DDASSERT(DDAND(DDFALSE, DDFALSE) == DDFALSE);
+}
+
+DDTEST(test_case_ddmacro, DDNOT)
+{
+    DDASSERT(DDNOT(DDTRUE) == DDFALSE);
+    DDASSERT(DDNOT(DDFALSE) == DDTRUE);
+}
+
+DDTEST(test_case_ddmacro, DDIF)
+{
+    DDASSERT(DDIF(DDTRUE, 1, 0) == 1);
+    DDASSERT(DDIF(DDFALSE, 1, 0) == 0);
+}
+
+DDTEST(test_case_ddmacro, DDCOMMA)
+{
+    DDASSERT(DDFALSE == DDHAS_COMMA(1));
+    DDASSERT(DDTRUE == DDHAS_COMMA(1, 1));
+
+    DDASSERT(DDTRUE == DDONLY_ONE(1));
+    DDASSERT(DDFALSE == DDONLY_ONE());
+    DDASSERT(DDFALSE == DDONLY_ONE(1, 1));
+
+    DDASSERT(DDFALSE == DDIS_EMPTY(1, 1));
+    DDASSERT(DDTRUE == DDIS_EMPTY());
+}
+
+DDTEST(test_case_ddmacro, DDARG_CNT)
+{
+    DDASSERT(0 == DDARGS_SIZE());
+    DDASSERT(1 == DDARGS_SIZE(1));
+    DDASSERT(2 == DDARGS_SIZE(1, 2));
+    DDASSERT(3 == DDARGS_SIZE(1, 2, ));
+}
+
+#define OPT_EACH_1(a, idx) DDEACH_2(OPT_EACH_2, 0, 0)
+#define OPT_EACH_2(a, idx) + idx ## a
+DDTEST(test_case_ddmacro, DDEACH_1)
+{
+    // 00 + 10 + 20 +...+ 990
+    DDASSERT(49500 == DDEACH_1(OPT_EACH_2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0));
+    DDASSERT(10 * 100 == DDEACH_1(OPT_EACH_1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0));
+}
+
+#define OPT_FOR_1(idx) DDFOR_2(OPT_FOR_2, idx)
+#define OPT_FOR_2(idx) + idx
+DDTEST(test_case_ddmacro, DDFOR)
+{
+    DDASSERT(5050 - 100 == DDFOR_1(OPT_FOR_2, 99));
+    int x = DDFOR_1(OPT_FOR_1, 99);
+    DDASSERT(166650 == x);
+}
+
+DDTEST(test_case_ddmacro, DDARGS_SIZE)
+{
+    DDASSERT(99 == DDARGS_SIZE(99, 98, 97, 96, 95, 94, 93, 92, 91, 90, 89, 88, 87, 86, 85, 84, 83, 82, 81, 80, 79, 78, 77, 76, 75, 74, 73, 72, 71, 70, 69, 68, 67, 66, 65, 64, 63, 62, 61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 48, 47, 46, 45, 44, 43, 42, 41, 40, 39, 38, 37, 36, 35, 34, 33, 32, 31, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1));
+}
+} // namespace NSP_DD
