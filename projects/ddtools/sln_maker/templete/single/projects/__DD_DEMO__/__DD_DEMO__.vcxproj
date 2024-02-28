@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+###ifdef MT
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+###endif
+###ifdef MD
+    <ProjectConfiguration Include="Debug_Mdd|Win32">
+      <Configuration>Debug_Mdd</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Md|Win32">
+      <Configuration>Release_Md</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug_Mdd|x64">
+      <Configuration>Debug_Mdd</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_Md|x64">
+      <Configuration>Release_Md</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+###endif
+  </ItemGroup>
+
+  <!-- 源码文件 -->
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+
+  <!-- 项目定义 -->
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>__PROJECT_GUID__</ProjectGuid>
+    <RootNamespace>__DD_DEMO__</RootNamespace>
+  </PropertyGroup>
+
+  <!-- 字符集 & 项目类型 -->
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>__TYPE__</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+###ifdef MT
+    <UseDebugLibraries Condition="'$(Configuration)'=='Debug'">true</UseDebugLibraries>
+    <UseDebugLibraries Condition="'$(Configuration)'=='Release'">false</UseDebugLibraries>
+    <WholeProgramOptimization Condition="'$(Configuration)'=='Release'">true</WholeProgramOptimization>
+###endif
+###ifdef MD
+    <UseDebugLibraries Condition="'$(Configuration)'=='Debug_Mdd'">true</UseDebugLibraries>
+    <UseDebugLibraries Condition="'$(Configuration)'=='Release_Md'">false</UseDebugLibraries>
+    <WholeProgramOptimization Condition="'$(Configuration)'=='Release_Md'">true</WholeProgramOptimization>
+###endif
+  </PropertyGroup>
+
+  <!-- C++ 目录 -->
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <Import Project="$(SolutionDir)user.props" />
+  <PropertyGroup>
+    <OutDir>$(USER_BuildOutDir)</OutDir>
+    <IntDir>$(USER_BuildTmpDir)$(ProjectName)\</IntDir>
+    <IncludePath>$(USER_IncludePath);$(IncludePath)</IncludePath>
+    <LibraryPath>$(USER_LibraryPath);$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Vcpkg">
+###ifdef USE_VCPKG
+    <VcpkgEnabled>true</VcpkgEnabled>
+###else
+   <VcpkgEnabled>false</VcpkgEnabled> 
+###endif
+    <VcpkgEnableManifest>true</VcpkgEnableManifest>
+	<VcpkgUseStatic>true</VcpkgUseStatic>
+###ifdef MD
+    <VcpkgInstalledDir Condition="'$(Configuration)'=='Debug_Mdd'">$(USER_VcpkgBaseDir)\$(PlatForm)_md</VcpkgInstalledDir>
+    <VcpkgInstalledDir Condition="'$(Configuration)'=='Release_Md'">$(USER_VcpkgBaseDir)\$(PlatForm)_md</VcpkgInstalledDir>
+	<VcpkgUseMD Condition="'$(Configuration)'=='Debug_Mdd'">true</VcpkgUseMD>
+	<VcpkgUseMD Condition="'$(Configuration)'=='Release_Md'">true</VcpkgUseMD>
+###endif
+###ifdef MT
+    <VcpkgInstalledDir Condition="'$(Configuration)'=='Debug'">$(USER_VcpkgBaseDir)\$(PlatForm)_mt</VcpkgInstalledDir>
+    <VcpkgInstalledDir Condition="'$(Configuration)'=='Release'">$(USER_VcpkgBaseDir)\$(PlatForm)_mt</VcpkgInstalledDir>
+	<VcpkgUseMD Condition="'$(Configuration)'=='Debug'">false</VcpkgUseMD>
+	<VcpkgUseMD Condition="'$(Configuration)'=='Release'">false</VcpkgUseMD>
+###endif
+  </PropertyGroup>
+
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(USER_AdditionalIncludePath)</AdditionalIncludeDirectories>
+      <!-- stdafx -->
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(USER_BuildTmpDir)$(ProjectName)\$(TargetName).pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile>__DD_DEMO__/stdafx.h</PrecompiledHeaderFile>
+      <!-- MT/MD  -->
+###ifdef MT
+      <RuntimeLibrary Condition="'$(Configuration)'=='Debug'">MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary Condition="'$(Configuration)'=='Release'">MultiThreaded</RuntimeLibrary>
+###endif
+###ifdef MD
+      <RuntimeLibrary Condition="'$(Configuration)'=='Debug_Mdd'">MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeLibrary Condition="'$(Configuration)'=='Release_Md'">MultiThreadedDLL</RuntimeLibrary>
+###endif
+      <!-- 代码优化 -->
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>false</ConformanceMode>
+###ifdef MT
+      <Optimization Condition="'$(Configuration)'=='Debug'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)'=='Release'">MaxSpeed</Optimization>
+      <FunctionLevelLinking Condition="'$(Configuration)'=='Release'">true</FunctionLevelLinking>
+      <IntrinsicFunctions Condition="'$(Configuration)'=='Release'">true</IntrinsicFunctions>
+###endif
+###ifdef MD
+      <Optimization Condition="'$(Configuration)'=='Debug_Mdd'">Disabled</Optimization>
+      <Optimization Condition="'$(Configuration)'=='Release_Md'">MaxSpeed</Optimization>
+      <FunctionLevelLinking Condition="'$(Configuration)'=='Release_Md'">true</FunctionLevelLinking>
+      <IntrinsicFunctions Condition="'$(Configuration)'=='Release_Md'">true</IntrinsicFunctions>
+###endif
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+###ifdef MT
+      <EnableCOMDATFolding Condition="'$(Configuration)'=='Release'">true</EnableCOMDATFolding>
+      <OptimizeReferences Condition="'$(Configuration)'=='Release'">true</OptimizeReferences>
+###endif
+###ifdef MD
+      <EnableCOMDATFolding Condition="'$(Configuration)'=='Release_Md'">true</EnableCOMDATFolding>
+      <OptimizeReferences Condition="'$(Configuration)'=='Release_Md'">true</OptimizeReferences>
+###endif
+    </Link>
+  </ItemDefinitionGroup>
+
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

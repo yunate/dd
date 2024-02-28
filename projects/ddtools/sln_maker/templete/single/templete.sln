@@ -1,0 +1,25 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_Mdd|x64 = Debug_Mdd|x64
+		Debug_Mdd|x86 = Debug_Mdd|x86
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release_Md|x64 = Release_Md|x64
+		Release_Md|x86 = Release_Md|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = __SLN_GUID__
+	EndGlobalSection
+EndGlobal

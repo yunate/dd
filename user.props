@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Configuration">
+    <PlatformToolset Condition="'$(DefaultPlatformToolset)' != ''">$(DefaultPlatformToolset)</PlatformToolset>
+  </PropertyGroup>
+  
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+
+  <!-- 用户定义 -->
+  <PropertyGroup Label="UserMacros">
+    <USER_BuildOutDir>$(SolutionDir)bin\$(Configuration)_$(PlatForm)\</USER_BuildOutDir>
+    <USER_BuildTmpDir>$(USER_BuildOutDir)tmp\</USER_BuildTmpDir>
+    <USER_IncludePath>$(SolutionDir)projects</USER_IncludePath>
+    <USER_LibraryPath>$(SolutionDir)bin\$(Configuration)_$(PlatForm)\</USER_LibraryPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <BuildMacro Include="USER_BuildOutDir"><value>$(USER_BuildOutDir)</value></BuildMacro>
+    <BuildMacro Include="USER_BuildTmpDir"><value>$(USER_BuildTmpDir)</value></BuildMacro>
+    <BuildMacro Include="USER_IncludePath"><value>$(USER_IncludePath)</value></BuildMacro>
+    <BuildMacro Include="USER_LibraryPath"><value>$(USER_LibraryPath)</value></BuildMacro>
+  </ItemGroup>
+    
+</Project>

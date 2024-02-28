@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="dd_winapi_hooker.h" />
+    <ClInclude Include="ddsyringe.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="dd_winapi_hooker.cpp" />
+    <ClCompile Include="ddapc_syringe.cpp" />
+    <ClCompile Include="ddclassic_syringe.cpp" />
+    <ClCompile Include="ddsyringe.cpp" />
+  </ItemGroup>
+</Project>
