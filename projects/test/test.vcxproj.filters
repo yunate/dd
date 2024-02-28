@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="ddbase\file\test_ddfile.cpp">
+      <Filter>ddbase\file</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\file\test_ddpath.cpp">
+      <Filter>ddbase\file</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\file\test_dir_utils.cpp">
+      <Filter>ddbase\file</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\file\test_file_utils.cpp">
+      <Filter>ddbase\file</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\iocp\test_case_iocp.cpp">
+      <Filter>ddbase\iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\ipc\test_shared_memory_ipc.cpp">
+      <Filter>ddbase\ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\windows\test_case_ddperfermence.cpp">
+      <Filter>ddbase\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\windows\test_case_ddprocess.cpp">
+      <Filter>ddbase\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\windows\test_case_ddwin_utils.cpp">
+      <Filter>ddbase\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\windows\test_moudle_utils.cpp">
+      <Filter>ddbase\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\windows\test_postmessage_to_window.cpp">
+      <Filter>ddbase\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\windows\testcase_dddll_param.cpp">
+      <Filter>ddbase\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\thread\test_thread.cpp">
+      <Filter>ddbase\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\pickle\test_pickle.cpp">
+      <Filter>ddbase\pickle</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_case_cmd_line_util.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_case_ddexec_cmd.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_case_ddfast_str.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_case_ddfilter.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_case_ddlog.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_case_ddtimer.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_case_lazy_instance.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_case_member_count.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_case_version.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_exec_guard.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_random.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_shared_memory.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_single_limted.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddwin\test_ddwin.cpp">
+      <Filter>ddwin</Filter>
+    </ClCompile>
+    <ClCompile Include="ddhook\test_case_classic_syringe.cpp">
+      <Filter>ddhook</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="testcase_ddlocal.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="test_case_ddstatic_initer.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_case_ddenvironment.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_case_ddcolor.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\test_case_ddbitmap.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\thread\test_case_ddevent.cpp">
+      <Filter>ddbase\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\macro\test_case_ddmacro.cpp">
+      <Filter>ddbase\macro</Filter>
+    </ClCompile>
+    <ClCompile Include="test_ddtraits.cpp">
+      <Filter>ddbase</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\iocp\test_case_iocp_with_dispatcher.cpp">
+      <Filter>ddbase\iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\coroutine\test_case_coroutine.cpp">
+      <Filter>ddbase\coroutine</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\network\test_case_tcp.cpp">
+      <Filter>ddbase\network</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\network\test_case_udp.cpp">
+      <Filter>ddbase\network</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\stream\test_stream.cpp">
+      <Filter>ddbase\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\stream\test_case_stream_view.cpp">
+      <Filter>ddbase\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\network\test_case_http_client.cpp">
+      <Filter>ddbase\network</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\coroutine\test_case_coroutine1.cpp">
+      <Filter>ddbase\coroutine</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\network\test_case_http_requester.cpp">
+      <Filter>ddbase\network</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\file\test_case_dddir_spyer.cpp">
+      <Filter>ddbase\file</Filter>
+    </ClCompile>
+    <ClCompile Include="ddwin\test_case_send_mouse_message_to_window.cpp">
+      <Filter>ddwin</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\network\test_case_http_server.cpp">
+      <Filter>ddbase\network</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\str\test_ddstr.cpp">
+      <Filter>ddbase\str</Filter>
+    </ClCompile>
+    <ClCompile Include="ddpra\test_case_mouse_simulater.cpp">
+      <Filter>ddpra</Filter>
+    </ClCompile>
+    <ClCompile Include="ddbase\str\test_ddsjson.cpp" />
+    <ClCompile Include="ddbase\str\test_ddjson.cpp">
+      <Filter>ddbase\str</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="res\resource.h">
+      <Filter>res</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="ddwin">
+      <UniqueIdentifier>{78a0e19c-1a17-4d6b-bf8d-87c497d18867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddhook">
+      <UniqueIdentifier>{b1d155f7-6786-4897-9475-e6044c9f993b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{914b3e98-8c8b-44c5-a3da-42af2b61cc52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res\cret">
+      <UniqueIdentifier>{a3e80372-992c-4179-9c21-b5a1992cab26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddbase">
+      <UniqueIdentifier>{80513095-cefa-4b52-b5f8-4ed9de61a09f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddbase\file">
+      <UniqueIdentifier>{2959b3ca-3b6b-4ad1-9c59-d68d4ee3e118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddbase\iocp">
+      <UniqueIdentifier>{e5bad7f7-528c-4cb2-b0b5-8ee59658d352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddbase\ipc">
+      <UniqueIdentifier>{200c6578-27b4-41f2-9351-8730ca1da6f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddbase\network">
+      <UniqueIdentifier>{23f0cda2-2599-4513-a218-5a15047faf7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddbase\pickle">
+      <UniqueIdentifier>{a0051af3-e15e-4363-a549-3e0908fd380b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddbase\thread">
+      <UniqueIdentifier>{1d61a3b9-b832-47d9-9896-89d2de610d9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddbase\windows">
+      <UniqueIdentifier>{ecb2bd9d-51d4-4072-8531-9b238e3bf962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddbase\macro">
+      <UniqueIdentifier>{051b4dab-630c-46c6-bc35-f86d9ce4226f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddbase\coroutine">
+      <UniqueIdentifier>{0c42cd51-ecb3-435a-a8d5-44e15d8a3a19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddbase\stream">
+      <UniqueIdentifier>{2b5ed37a-350a-4a9d-8a15-9276d4aae3c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddbase\str">
+      <UniqueIdentifier>{a0460816-ecdd-4deb-bb1f-0a86df5a0240}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ddpra">
+      <UniqueIdentifier>{639adc22-0e2e-46f0-90ec-609d578dec96}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\main.ico">
+      <Filter>res</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\test.rc">
+      <Filter>res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cret\ddbase.pfx">
+      <Filter>res\cret</Filter>
+    </None>
+  </ItemGroup>
+</Project>

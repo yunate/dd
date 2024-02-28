@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="str">
+      <UniqueIdentifier>{309ded0b-fe9d-493a-8db6-0c86643fc137}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="asm">
+      <UniqueIdentifier>{6c4c42fc-ea70-473c-a3c7-238e252c2041}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="asm\x64">
+      <UniqueIdentifier>{a50bc4ec-5293-415a-83c1-c092ead40cf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="file">
+      <UniqueIdentifier>{5b956070-9b28-4fb9-bf4d-69df099a4bf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ipc">
+      <UniqueIdentifier>{6b16e94d-56fa-4380-9023-867153e111aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pickle">
+      <UniqueIdentifier>{b5c5aa5c-1f26-46a4-9f7a-31b046ccbb7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stream">
+      <UniqueIdentifier>{c0e06f9c-5fd4-445a-929b-1022767942e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{5a6adbe3-17cb-4285-bd0e-5fb0f6af23fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="windows">
+      <UniqueIdentifier>{66ee3af7-6991-446c-bd48-fccd9f583396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{abfa265f-07a2-40e3-a316-f5a8f64425f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="macro">
+      <UniqueIdentifier>{8a161a91-ca84-4200-9c0d-d4a564e04cc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iocp">
+      <UniqueIdentifier>{9419b3a8-2ef3-4da3-aba4-d3e2ae046335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="coroutine">
+      <UniqueIdentifier>{08e05027-90d5-465b-af60-3c05a0ce3f7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\http">
+      <UniqueIdentifier>{26140be1-d01d-4abe-a4aa-7c3153bbf57f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="asm\x64\ddasm_utils.asm">
+      <Filter>asm\x64</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="file\ddbig_file_utils.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\dddir.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\ddfile.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\ddini_file.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="file\ddpath.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="ipc\ddshared_memory_ipc.cpp">
+      <Filter>ipc</Filter>
+    </ClCompile>
+    <ClCompile Include="windows\ddcom_utils.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="windows\dddll_param.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="windows\ddmoudle_utils.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="windows\ddperfermence.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="windows\ddprocess.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="windows\ddregister.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="windows\ddresource_util.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="windows\ddsecurity.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="windows\ddshared_memory.cpp">
+      <Filter>windows</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\ddevent.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\ddtask_queue.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="thread\ddtask_thread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="stream\ddfile_stream.cpp">
+      <Filter>stream</Filter>
+    </ClCompile>
+    <ClCompile Include="stream\ddmemory_stream.cpp">
+      <Filter>stream</Filter>
+    </ClCompile>
+    <ClCompile Include="pickle\ddidata_parser.cpp">
+      <Filter>pickle</Filter>
+    </ClCompile>
+    <ClCompile Include="pickle\ddpickle.cpp">
+      <Filter>pickle</Filter>
+    </ClCompile>
+    <ClCompile Include="str\ddstr.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="ddcmd_line_utils.cpp" />
+    <ClCompile Include="dderror_code.cpp" />
+    <ClCompile Include="ddio.cpp" />
+    <ClCompile Include="ddlog.cpp" />
+    <ClCompile Include="ddrandom.cpp" />
+    <ClCompile Include="ddtime.cpp" />
+    <ClCompile Include="ddversion.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="ddlocale.cpp" />
+    <ClCompile Include="ddcolor.cpp" />
+    <ClCompile Include="ddbitmap.cpp" />
+    <ClCompile Include="ddenvironment.cpp" />
+    <ClCompile Include="iocp\ddiocp.cpp">
+      <Filter>iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="iocp\ddiocp_with_dispatcher.cpp">
+      <Filter>iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="network\ddnetwork_utils.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\ddtcp.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\ddudp.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\http\ddhttp_client.cpp">
+      <Filter>network\http</Filter>
+    </ClCompile>
+    <ClCompile Include="network\http\ddhttp_header.cpp">
+      <Filter>network\http</Filter>
+    </ClCompile>
+    <ClCompile Include="network\http\ddhttp_parser.cpp">
+      <Filter>network\http</Filter>
+    </ClCompile>
+    <ClCompile Include="stream\ddstream_view.cpp">
+      <Filter>stream</Filter>
+    </ClCompile>
+    <ClCompile Include="iocp\ddiocp_io_dispatch.cpp">
+      <Filter>iocp</Filter>
+    </ClCompile>
+    <ClCompile Include="network\dddns_factory.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\ddtls.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="file\dddir_spyer.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="network\http\ddhttp_server.cpp">
+      <Filter>network\http</Filter>
+    </ClCompile>
+    <ClCompile Include="network\http\ddhttp_socket.cpp">
+      <Filter>network\http</Filter>
+    </ClCompile>
+    <ClCompile Include="network\ddcert.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\http\ddhttp_utils.cpp">
+      <Filter>network\http</Filter>
+    </ClCompile>
+    <ClCompile Include="str\ddtree.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="file\ddbig_file_utils.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\dddir.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\ddfile.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\ddini_file.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="file\ddpath.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="ipc\ddshared_memory_ipc.h">
+      <Filter>ipc</Filter>
+    </ClInclude>
+    <ClInclude Include="windows\ddcom_utils.h">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="windows\dddll_param.h">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="windows\ddmoudle_utils.h">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="windows\ddperfermence.h">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="windows\ddperfermence_gpu_ntd3dkmt.h_">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="windows\ddprocess.h">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="windows\ddregister.h">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="windows\ddresource_util.h">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="windows\ddsecurity.h">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="windows\ddshared_memory.h">
+      <Filter>windows</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\ddasync.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\ddevent.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\ddtask_queue.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="thread\ddtask_thread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="stream\ddfile_stream.h">
+      <Filter>stream</Filter>
+    </ClInclude>
+    <ClInclude Include="stream\ddistream.h">
+      <Filter>stream</Filter>
+    </ClInclude>
+    <ClInclude Include="stream\ddmemory_stream.h">
+      <Filter>stream</Filter>
+    </ClInclude>
+    <ClInclude Include="pickle\ddidata_parser.h">
+      <Filter>pickle</Filter>
+    </ClInclude>
+    <ClInclude Include="pickle\ddpickle.h">
+      <Filter>pickle</Filter>
+    </ClInclude>
+    <ClInclude Include="str\ddfast_str.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\ddregex_example.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\ddstr.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\ddurl.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="ddassert.h" />
+    <ClInclude Include="ddcmd_line_utils.h" />
+    <ClInclude Include="dddef.h" />
+    <ClInclude Include="dderror_code.h" />
+    <ClInclude Include="ddexec_guard.hpp" />
+    <ClInclude Include="ddfilter.h" />
+    <ClInclude Include="ddio.h" />
+    <ClInclude Include="ddlazy_exec.h" />
+    <ClInclude Include="ddlazy_instance.h" />
+    <ClInclude Include="ddlog.hpp" />
+    <ClInclude Include="ddmath.h" />
+    <ClInclude Include="ddmember_count.hpp" />
+    <ClInclude Include="ddmini_include.h" />
+    <ClInclude Include="ddnocopyable.hpp" />
+    <ClInclude Include="ddrandom.h" />
+    <ClInclude Include="ddsingle_limited.h" />
+    <ClInclude Include="ddsingleton.hpp" />
+    <ClInclude Include="ddsys.h" />
+    <ClInclude Include="ddtime.h" />
+    <ClInclude Include="ddtraits.hpp" />
+    <ClInclude Include="ddversion.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="ddtest_case_factory.h" />
+    <ClInclude Include="ddlocale.h" />
+    <ClInclude Include="ddstatic_initer.h" />
+    <ClInclude Include="ddcolor.h" />
+    <ClInclude Include="ddbitmap.h" />
+    <ClInclude Include="ddenvironment.h" />
+    <ClInclude Include="macro\ddsize.hpp">
+      <Filter>macro</Filter>
+    </ClInclude>
+    <ClInclude Include="macro\ddcat.hpp">
+      <Filter>macro</Filter>
+    </ClInclude>
+    <ClInclude Include="macro\ddlogic.hpp">
+      <Filter>macro</Filter>
+    </ClInclude>
+    <ClInclude Include="macro\ddfor.hpp">
+      <Filter>macro</Filter>
+    </ClInclude>
+    <ClInclude Include="macro\ddeach.hpp">
+      <Filter>macro</Filter>
+    </ClInclude>
+    <ClInclude Include="macro\ddinc.hpp">
+      <Filter>macro</Filter>
+    </ClInclude>
+    <ClInclude Include="macro\dddec.hpp">
+      <Filter>macro</Filter>
+    </ClInclude>
+    <ClInclude Include="macro\ddmacro.hpp">
+      <Filter>macro</Filter>
+    </ClInclude>
+    <ClInclude Include="macro\ddfor_1_.hpp">
+      <Filter>macro</Filter>
+    </ClInclude>
+    <ClInclude Include="macro\ddfor_2_.hpp">
+      <Filter>macro</Filter>
+    </ClInclude>
+    <ClInclude Include="macro\ddfor_3_.hpp">
+      <Filter>macro</Filter>
+    </ClInclude>
+    <ClInclude Include="macro\ddeach_1_.hpp">
+      <Filter>macro</Filter>
+    </ClInclude>
+    <ClInclude Include="macro\ddeach_2_.hpp">
+      <Filter>macro</Filter>
+    </ClInclude>
+    <ClInclude Include="macro\ddeach_3_.hpp">
+      <Filter>macro</Filter>
+    </ClInclude>
+    <ClInclude Include="pickle\ddpickle_helper_.hpp">
+      <Filter>pickle</Filter>
+    </ClInclude>
+    <ClInclude Include="iocp\ddiocp.h">
+      <Filter>iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="iocp\ddiocp_with_dispatcher.h">
+      <Filter>iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="network\ddnetwork_utils.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\ddtcp.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="coroutine\ddcoroutine.h">
+      <Filter>coroutine</Filter>
+    </ClInclude>
+    <ClInclude Include="network\ddudp.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\http\ddhttp_client.h">
+      <Filter>network\http</Filter>
+    </ClInclude>
+    <ClInclude Include="network\http\ddhttp_header.h">
+      <Filter>network\http</Filter>
+    </ClInclude>
+    <ClInclude Include="network\http\ddhttp_parser.h">
+      <Filter>network\http</Filter>
+    </ClInclude>
+    <ClInclude Include="stream\ddstream_view.h">
+      <Filter>stream</Filter>
+    </ClInclude>
+    <ClInclude Include="iocp\ddiocp_io_dispatch.h">
+      <Filter>iocp</Filter>
+    </ClInclude>
+    <ClInclude Include="network\dddns_factory.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\ddtls.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\http\ddhttp_server.h">
+      <Filter>network\http</Filter>
+    </ClInclude>
+    <ClInclude Include="file\dddir_spyer.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="network\http\ddhttp_socket.h">
+      <Filter>network\http</Filter>
+    </ClInclude>
+    <ClInclude Include="network\ddcert.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\http\ddhttp_utils.h">
+      <Filter>network\http</Filter>
+    </ClInclude>
+    <ClInclude Include="str\ddtree.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\ddjson.h">
+      <Filter>str</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
