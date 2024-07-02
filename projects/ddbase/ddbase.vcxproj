@@ -72,6 +72,9 @@
     <ClCompile Include="iocp\ddiocp.cpp" />
     <ClCompile Include="iocp\ddiocp_with_dispatcher.cpp" />
     <ClCompile Include="ipc\ddshared_memory_ipc.cpp" />
+    <ClCompile Include="network\ddnetwork_utils.cpp" />
+    <ClCompile Include="network\ddsocket.cpp" />
+    <ClCompile Include="network\ddsocket_connector.cpp" />
     <ClCompile Include="pickle\ddidata_parser.cpp" />
     <ClCompile Include="pickle\ddpickle.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -146,6 +149,9 @@
     <ClInclude Include="macro\ddlogic.hpp" />
     <ClInclude Include="macro\ddmacro.hpp" />
     <ClInclude Include="macro\ddsize.hpp" />
+    <ClInclude Include="network\ddnetwork_utils.h" />
+    <ClInclude Include="network\ddsocket.h" />
+    <ClInclude Include="network\ddsocket_connector.h" />
     <ClInclude Include="pickle\ddidata_parser.h" />
     <ClInclude Include="pickle\ddpickle.h" />
     <ClInclude Include="pickle\ddpickle_helper_.hpp" />

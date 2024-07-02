@@ -84,7 +84,7 @@ private:
 class ddiocp_io_dispatch : public ddiocp_timeout_dispatch
 {
 public:
-    ~ddiocp_io_dispatch();
+    virtual ~ddiocp_io_dispatch();
     void on_iocp_complete_v1(const ddiocp_item& item) final;
     virtual void on_iocp_complete_v2(const ddiocp_item& item) { item; };
 

@@ -134,6 +134,15 @@
     <ClCompile Include="iocp\ddiocp_with_dispatcher.cpp">
       <Filter>iocp</Filter>
     </ClCompile>
+    <ClCompile Include="network\ddnetwork_utils.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\ddsocket.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="network\ddsocket_connector.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="file\ddbig_file_utils.h">
@@ -305,5 +314,14 @@
     <ClInclude Include="coroutine\ddcoroutine_traits_.hpp" />
     <ClInclude Include="coroutine\ddcoroutine.h" />
     <ClInclude Include="coroutine\ddcoroutine_context_.hpp" />
+    <ClInclude Include="network\ddsocket.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\ddnetwork_utils.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="network\ddsocket_connector.h">
+      <Filter>network</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
